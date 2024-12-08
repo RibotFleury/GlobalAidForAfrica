@@ -1,0 +1,22 @@
+button {
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+  background-color: $color-blue;
+  letter-spacing: 2px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+  @media screen and (max-width: 1036px) {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 0.5rem;
+    padding: 10px;
+  }
+}

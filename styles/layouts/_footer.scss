@@ -1,0 +1,188 @@
+footer {
+  height: 465px;
+  width: 95%;
+  background-color: $color-foot;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+  border-radius: 3px;
+    box-shadow: 0 2px 10px #888;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 50px;
+    }
+
+  h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+    line-height: 30px;
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .partner {
+    margin-top: 4rem;
+    /*display: grid;
+    grid-template-columns: 30% 70%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+    padding: 60px 0 15px;
+    @media screen and (max-width: 850px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 568px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h5 {
+      text-align: center;
+      font-size: 1.2rem;
+      display: flex ;
+      align-items: center;
+      justify-content: center;
+      text-transform: uppercase;
+      width: 30%;
+      @media screen and (max-width: 850px) {
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 5px;
+      }
+    }
+    .img-foot {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+      @media screen and (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+      }
+      @media screen and (max-width: 568px) {
+        display: grid;
+        gap: 10px;
+      }
+
+      img {
+       margin-right: 15px;
+        width: 60px;
+        /*height: 80px;*/
+        transition: 0.3s;
+        @media screen and (max-width: 850px) {
+          width: 50px;
+          height: 50px;
+        }
+        @media screen and (max-width: 790px) {
+          width: 50px;
+          height: 50px;
+        }
+        @media screen and (max-width: 568px) {
+          width: 50px;
+          height: 50px;
+        }
+
+        @media screen and (max-width: 390px) {
+          width: 30px;
+          height: 30px;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+
+          @media screen and (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    background: $color-foot;
+    color: black;
+    width: 100%;
+    text-align: center;
+
+    .footer-logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 1.5rem;
+      width: 50%;
+      margin: 10px auto;
+      padding: 5px;
+      background: rgb(204, 202, 201);
+      border-radius: 1rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: 568px) {
+        font-size: 1rem;
+        width: 40%;
+      }
+
+      i {
+        &:hover {
+          color: $color-blue;
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .copyright-text {
+      background: rgb(204, 202, 201);
+      padding: 5px;
+      margin-bottom: 10px;
+      border-radius: 3px;
+    box-shadow: 0 2px 10px #888;
+      
+      h6{
+        font-size: 0.8rem;
+        margin-top: 10px;
+      }
+
+      @media screen and (max-width: 568px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
